@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	padding: 0; /*batas dalam atas bawah kiri kanan 0*/
+	margin: 0;/*batas luar atas bawah kiri kanan 0*/
+	font-family: 'Montserrat', sans-serif;/*font dasar yang dipakai*/
+}
+.container-manual {
+	width: 80%; /* panjang ke kanan 80% dari panjang layar/full */ 
+	margin: 0 auto; /*bata luar/margin atas bawah sett 0, batas kanan kiri otomatis*/ 
+}
+.top-head {
+	background-color: #181d33; /*warna background*/ 
+	height: 40px;/*uk panjang ke bawah*/ 
+	width: 100%;/*uk panjang ke kanan*/
+
+}
+.medsos {
+	margin: 10px 0; /*batas luar/margin atas bawah sett 10px, batas kanan kiri 0*/ 
+	position: absolute; /*posisi absolut*/ 
+}
+.medsos ul li {
+	display: inline-block; /*tampilan lurus ke kanan dalam satu baris*/
+}
+.medsos ul li a{
+	text-decoration: none; /*dekorasi teks dihilangkan/teks tanpa garis bawah*/ 
+}
+a {
+	text-decoration: none;/*dekorasi teks dihilangkan/teks tanpa garis bawah*/ 
+	margin-right: 15px;/*batas luar kanan sett 15px*/ 
+}
+.bnsp, .icon {
+	color: #fff; /*settingan warna daripada icon dan teks bnsp*/ 
+}
+.navbar {
+	background-color: #F7F6F6; /*warna background*/ 
+	padding: 10px; /*jarak dalam atas kanan kiri bawah*/ 
+	height: 90px; /*panjang elemen ke bawah*/ 
+	width: 100%;/*panjang elemen ke kanan*/ 
+}
+label {
+	font-size: 30px; /*ukuran font label*/ 
+	color: black; /*warna font label*/ 
+	font-weight: bold; /*sett font menjadi tebal*/ 
+	padding: 15px 0px; /*sett jarak dalam atas bawah 15, kiri kanan 0*/ 
+	float: left; /*penempatan elemen di sisi kiri halaman dengan float*/ 
+}
+label:hover { /*apabila label disentuh kursor*/ 
+	color: #8f8b8b;  /*warna aka berubah seperti kode warna di samping kiri*/ 
+}
+.navbar ul {
+	margin: 0; /*batas luar atas bawah kanan kiri 0*/ 
+	padding: 5px; /*batas dalam atas bawah kiri kanan 5px*/ 
+	float: right; /*penempatan elemen di sisi kanan halaman dengan float*/
+}
+.navbar ul li {
+	display: inline-block; /*sett tampilan lurus ke kanan satu baris*/
+	list-style: none; /*tanda list dihapus*/
+}
+.navbar ul li a {
+	display: block; /*sett tampilan block*/
+	text-decoration: none; /*penghapusan teks dekorasi/teks tanpa garis bawah*/
+	padding: 15px 20px; /*setting jarak dalam atas bawah 15px, kiri kanan 20px*/
+	color: black; /*setting warna hitam*/
+}
+.navbar ul li a:hover {
+	display: block;
+	text-decoration: none;
+	padding: 15px 20px;
+	color: #8f8b8b;
+}
+.navbar ul li .dropdown {
+	display: none; /*setting penampilan default kosong/tidak ditampilkan*/
+}
+.navbar ul li:hover .dropdown {/*pada saat kursor menyentuh menu diatas menu yg terdapat class dropdown*/
+	display: block; /*setting penampilan diperlihatakan/blok*/
+	position: absolute;/*sett posisi absolut*/
+	padding: 2px 3px; /*sett jarak dalam atas bawah 2px dan kiri kanan 3px*/
+	background-color: #ECE9E8; /*sett warna bacground*/
+	border-radius: 8px;/*sett round 8px dari kotak background*/
+}
+.navbar ul li:hover .dropdown li {
+	display: inline-block; /*sett penampilan pada saat submenu muncul dengan menampil mendatar ke kanan*/
+}
+
+.footer {
+	width: 100%; /*settingan panjang ke kanan 100 % dari panjang keseluruhan ke kanan kontainer*/
+	max-height: 1120px; /*sett jarak max ke bawah adalah 1120px*/
+	background-color: #020213; /*sett warna background*/
+	padding: 50px 0;/*sett jarak dalam atas bawah 50px kiri kanan 0*/
+}
+footer ul {
+	list-style: none; /*menghilangkan tanda list bundar hitam*/
+}
+.baris-footer {
+	display: flex; /*sett tampilan flex*/
+	flex-wrap: wrap;/*sett tampilan flex ke kanan*/
+}
+.kolom-footer {
+	width: 33%;/*settingan panjang ke kanan 33 % dari panjang keseluruhan ke kanan kontainer*/
+	padding: 0 15px;/*sett jarak dalam atas bawah 0 kiri kanan 15*/
+}
+.kolom-footer h4 {
+	font-size: 16px;/*sett ukuran font 16px*/
+	color: #15a2b8; /*sett warna*/
+	margin-bottom: 20px; /*sett batas luar bawah 20px*/
+	font-weight: 1000; /*sett ketebalan 1000*/
+	padding-bottom: 30px; /*sett batas dalam bawah 20px*/
+	border-bottom: 0.6px solid; /*pemberian border bawah dengan ketebalan 0.6px solid*/
+}
+.kolom-footer h4 a {
+	text-decoration: none; /*penghilangan dekorasi teks/menghapus garis bawah pada teks*/
+}
+.kolom-footer ul li a {
+	text-decoration: none;/*penghilangan dekorasi teks/menghapus garis bawah pada teks*/
+	color: #35637d; /*sett warna*/
+}
+footer ul li {
+	padding: 8px 0; /*sett batas luar atas bawah 8px kiri kanan 0*/
+}
+footer ul li a:hover {/*jika kursor menyentuh teks list pada footer*/
+	color: white; /*maka warna menjadi putih*/
+}
+footer ul li i { /*sett icon*/
+	color: #6c757d;/*sett warna icon*/
+}
+.konten {
+	width: 100%; /*ukuran panjang ke kanan full sepanjang jarak kontainer kiri kanan*/
+	height: 900px; /*panjang ke bawah 900px*/
+	background-color: white; /*warna background putih*/
+	margin: 70px 0; /*jarak atas bawah 70px kiri kanan 0*/
+	position: relative; /*posisi relatif*/
+}
+.box1 {
+	width: 26%; /*settingan panjang ke kanan 26 % dari panjang keseluruhan ke kanan kontainer*/
+	height: 100%; /*settingan panjang ke bawah 100% % dari panjang keseluruhan ke bawah kontainer*/
+	border-radius: 5px; /*sett round 5px dari kotak background*/
+	float: left; /*penempatan elemen di sisi kiri halaman dengan float*/
+}
+.box2 {
+	width: 72%;/*settingan panjang ke kanan 72 % dari panjang keseluruhan ke kanan kontainer*/
+	height: 900px; /*settingan panjang ke bawah 900px*/
+	border-radius: 5px;/*sett round 5px dari kotak background*/
+	position: relative; /*posisi relatif*/
+	right: 0; /*jarak dengan sisi paling kanan kontainer adalah 0*/
+	float: right; /*penempatan elemen di sisi kanan halaman dengan float*/
+	background-color: #f7f6f6; /*sett warna background*/
+	box-shadow: 1px 1px 2.5px black; /*sett shadow*/
+}
+.kiri1 {
+	width: 100%;/*settingan panjang ke kanan 100% dari panjang keseluruhan ke kanan kontainer*/
+	height: 300px;/*settingan panjang ke bawah 300px*/
+	background-color: #f7f6f6;/*sett warna background*/
+	border-radius: 5px;/*sett round 5px dari kotak background*/
+	box-shadow: 1px 1px 2.5px black;/*sett shadow*/
+	display: block; /*sett display block/mengisi ruang kosong*/
+}
+.kiri2 {
+	margin-top: 70px; /*sett jarak luar atas 70px*/
+	display: block;/*sett display block/mengisi ruang kosong*/
+
+}
+.kiri2 iframe { 
+	box-shadow: 1px 1px 2.5px black;/*sett shadow*/
+	border:0; /*menghilangkan border*/
+	border-radius: 5px;/*sett round 5px dari kotak background*/
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.konten .box2 .judul { 
+	margin: 20px 30px; /*sett batas luar atas bawah 20px kiri kanan 30px*/
+	font-family: 'PoppinSs', sans-serif; /*sett jenis font yg dipakai*/
+	font-size: 45px;/*sett ukuran font*/
+}
+.logo-konten h1 {
+	margin: 0px 30px; /*sett jarak luar atas bawah 0 kiri kanan 30px*/
+	font-size: 30px; /*sett ukuran font 30px*/
+	border: 1px dashed; /*sett border 1px putus2*/
+	padding: 5px 10px;/*sett jarak dalam atas bawah 5 px kiri kanan 10px*/
+}
+.konten .box2 h2 {
+	margin: 0 20px;
+}
+.box2 .paragraf {
+	margin: 20px 30px;/*sett jarak luar atas bawah 20 kiri kanan 30px*/
+	word-spacing: 2px;/*sett jarak antar huruf 2px*/
+	line-height: 25px;/*sett jarak antar baris 25px*/
+	color: #7f667f;/*sett warna*/
+	text-align: left;/*sett teks rata kiri*/
+}
+.box2 ol li {
+	margin: 20px 20px;/*sett jarak luar atas bawah 20 kiri kanan 20px*/
+	word-spacing: 0px;/*sett jarak antar huruf 0px*/
+	line-height: 20px;/*sett jarak antar baris 20px*/
+	color: #7f667f;/*sett warna*/
+}
+.box2 h5 {
+	word-spacing: 0px; /*sett jarak antar huruf 0*/
+	line-height: 10px;/*sett jarak antar baris 10px*/
+	color: #7f667f;/*sett warna*/
+	margin-left: 30px;/*sett jarak luar kiri 30px*/
+	margin-top: 40px;/*sett jarak kanan kiri 40px*/
+}
+.box2 .gbrSO {
+	position: relative; /*sett posisi relatif bisa digeser*/
+	width: 650px;/*sett panjang ke kanan 650px*/
+	height: 380px;/*sett panjang ke bawah 380px*/
+	margin: 30px auto;/*sett batas luar atas bawah 30px kiri kanan auto agar gambar ditengah*/
+	display: block; /*sett display block/mengisi ruang kosong*/
+}
+.konten .kiri1 {
+	height: 300px; /*sett panjang ke bawah 300px*/
+	display: block; /*sett display block/mengisi ruang kosong*/
+	border:1px solid; /*sett border 1px solid/tidak putus2*/
+}
+.konten .kiri1 ul li {
+	margin-top: 21px; /*sett jarak luar atas 21px*/
+	margin-left: 7px; /*sett jarak luar kiri 7px*/
+	margin-right: 33px;/*sett jarak luar kanan 33px*/
+	list-style: none; /*menghapus tanda list titik bundar hitam*/
+	padding-bottom: 2px; /*sett jarak dalam bawah 2px*/
+	font-size: 14px; /*sett ukuran font 14px*/
+	border-bottom: 1px solid; /*sett border bawah teks 1px solid/tidak putus2*/
+}
+.konten .kiri1 ul li a {
+	text-decoration: none; /*penghapusan teks dekorasi/teks tanpa garis bawah*/
+	font-weight: bold; /*menebalkan font*/
+}
+.konten .kiri1 ul li:hover { /*apabila kursor menyentuh teks sidebar*/
+	color: #8f8b8b;/*warna font berubah*/
+}
+.box2 table {
+	width: 700px;/*ukuran panjang ke kanan 700px*/
+	margin: 20px auto; /*jarak luar atas bawah 20px kiri kanan auto, tabel ditengah*/
+	position: relative; /*posisi relatif, bisa diubah*/
+	color: #444;/*sett warna*/
+}
+.box2 table th,td {/*sett kolom pada tabel*/
+	padding: 5px 20px;/*jarak dalam atas bawah 5px kiri kanan 20px*/
+}
+.box2 table th {/*sett kolom paling atas pada tabel*/
+	background-color: #B4BEFC; /*sett warna background*/
+}
+.box2 table tr:hover {/*sett kolom selain paling atas pada tabel jika disentuh*/
+	background-color: #acb8c2;/*sett warna background*/
+	color: white;/*sett warna*/
+}
+form{
+    width: 500px; /*sett panjang ke kanan 500px*/
+    height: 666px;/*sett panjang ke bawah 666*/
+    margin-top: 100px;/*sett jarak luar atas 100px*/
+    padding: 50px; /*sett jarak dalam atas bawah kiri kanan 50px*/
+    border: 1px dashed;/*sett border 1px putus2*/
+    border-radius: 5px; /*sett round border 5px*/
+    margin-left: auto;/*sett jarak luar kiri auto*/
+    margin-right: auto;/*sett jarak luar kanan auto*/
+}
+.konten label {
+	font-size: 20px;/*sett ukuran font label 20px*/
+	margin-bottom: 5px;/*sett jarak luar bawah 5px*/
+}
+.konten .form-control {
+	margin-bottom: 5px/*sett jarak luar bawah 5px*/
+}
+.konten .btn {
+	margin-top: 50px;/*sett jarak luar atas 50px*/
+}
+.konten .daftar { 
+    width: 500px;
+    height: 666px;
+    margin-top: 100px;
+    padding: 50px;
+    border: 1px dashed;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d2dde7;
+}
+.konten .daftar h2, p {
+	text-align: center;
+}
